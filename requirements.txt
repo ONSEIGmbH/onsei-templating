@@ -1,0 +1,12 @@
+attrs==20.3.0
+iniconfig==1.1.1
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+packaging==20.9
+pluggy==0.13.1
+py==1.10.0
+pyparsing==2.4.7
+pytest==6.2.2
+PyYAML==5.4.1
+-e git+git@github.com:ONSEIGmbH/onsei-templating.git@6512342f77c84af129d840fad294c2e863a824d4#egg=templating
+toml==0.10.2
