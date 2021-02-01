@@ -48,7 +48,16 @@ Type in ```Python: Select Interpreter``` and select ```./venv/bin/python```. [Do
 
 ## Usage
 
-from templating import PromptTemplate
+Install the package via pip:
 
-t = PromptTemplate('template/example.yaml')
-print(t.render('hi')) # Hello World!
+    $ pip install git+https://github.com/ONSEIGmbH/onsei-templating#egg=templating 
+
+Import the `PromptTemplate` in each script, where speech output is needed.
+Set the path to the template file (`.yaml`). Filename can be changed. 
+To get the speech output use the se the `render` function as shown below.
+
+    from templating import PromptTemplate
+
+    t = PromptTemplate('template/example.yaml')
+    print(t.render('hi')) # Hello World!
+    print(t.render('hi_name',name='MyName')) # Hello MyName!
